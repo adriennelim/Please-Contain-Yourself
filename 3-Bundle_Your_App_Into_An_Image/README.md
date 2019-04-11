@@ -166,15 +166,15 @@ docker build -t nodeserver .
 
 - [X] Your image has been assembled and saved on your machine just like your perfect sandwich stored in the fridge - now let's start creating containers from it! Run `docker run -d -p 1000:3000 --name slytherin_rulez --rm nodeserver`
 
-- [ ] Check that it is running with `docker ps` and then visit `localhost:1000` in your browser
+- [X] Check that it is running with `docker ps` and then visit `localhost:1000` in your browser
 
 You'll see that our server is sending us a greeting along with a random number it was assigned when it was spun up. 
 
-- [ ] Containers are stateless; they retain information about themselves only as long as they are running. For example: try refreshing the page - it has no effect on the number. Now, back in the terminal, run `docker restart slytherin_rulez`
+- [X] Containers are stateless; they retain information about themselves only as long as they are running. For example: try refreshing the page - it has no effect on the number. Now, back in the terminal, run `docker restart slytherin_rulez`
 
-- [ ] Go back to the browser and refresh the page. The number changed! What?? Because containers are stateless, restarting it caused everything within it to be lost.
+- [X] Go back to the browser and refresh the page. The number changed! What?? Because containers are stateless, restarting it caused everything within it to be lost.
 
-- [ ] And just for fun; make like, 3 more containers from our server image, each on a different port
+- [X] And just for fun; make like, 3 more containers from our server image, each on a different port
 
 On port 2000:
 ```sh
